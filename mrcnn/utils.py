@@ -15,12 +15,12 @@ import random
 import numpy as np
 import tensorflow as tf
 import scipy
-import skimage.color
 import skimage.io
 import skimage.transform
 import urllib.request
 import shutil
 import warnings
+from skimage.color import lab2rgb, lch2lab
 from distutils.version import LooseVersion
 
 # URL from which to download the latest COCO trained weights
